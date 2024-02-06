@@ -1,3 +1,10 @@
+# Introduction
+
+I saw this tweet a few weeks ago:
+![tweet](images/tweet.jpg)
+
+# Table of Contents
+
 1. Initial planning & simulating
 2. Assembling the hardware
 3. Testing time!
@@ -7,8 +14,10 @@
 ---
 
 1. Initial planning & simulating
-   I've never built an actuator and control system, so I got ChatGPT to describe the mechanism and break it down into pieces.  I made an outline for the project and got to work.  I figured that the electronics would be the most difficult part, so I started there.  After evaluating a few dispersal options, I decided to keep things simple and implement a trapdoor mechanism to release the material.  Also, I decided to use salt as our cloud seeding material.
-   I decided to use hardware simulation software to plan out the system.  I found a tool called tinkercad that was really good for this.  I was able to simulate a circuit board, servomotor, and the connections between them.  It also has a basic IDE in it, so you can actually operate the servomotor.  It uses C++; my programming skills mostly involve python and javascript, but with a bit of help from ChatGPT, I was able to make a simple program that did everything I wanted it to do.  We'll go into more detail on that later.
+
+I've never built an actuator and control system, so I got ChatGPT to describe the mechanism and break it down into pieces.  I made an outline for the project and got to work.  I figured that the electronics would be the most difficult part, so I started there.  After evaluating a few dispersal options, I decided to keep things simple and implement a trapdoor mechanism to release the material.  Also, I decided to use salt as our cloud seeding material.
+
+I decided to use hardware simulation software to plan out the system.  I found a tool called tinkercad that was really good for this.  I was able to simulate a circuit board, servomotor, and the connections between them.  It also has a basic IDE in it, so you can actually operate the servomotor.  It uses C++; my programming skills mostly involve python and javascript, but with a bit of help from ChatGPT, I was able to make a simple program that did everything I wanted it to do.  We'll go into more detail on that later.
 
 ![tinkercad simulator](images/simulation.jpg)
 _Software simulation_
@@ -85,13 +94,14 @@ This is going to be a long list.  In no particular order:- I thought that the e
 ---
 
 5. Things I'd do differently
-   If I had to do this again, what would I do differently?
-   It would depend on what resources I had available.  Throughout this project, I kept thinking, man, a 3-d printer would really come in handy right now.  Obviously we'd want to replace the salt container with something that isn't a meme.  Something that would form an airtight seal and could be attached to the underside of a drone.  A 3-d printer would let you tailor the exact dimensions of the container to that of the drone you're using.
-   Relatedly, we could build a dispersal mechanism with a tighter seal.  In the final video, you might have noticed a small trickle of salt, even when the actuator was supposed to be completely closed.  Custom-printed parts would allow for more precise and secure seals.
-   The main thing I've been thinking about, though, is implementing wireless functionality.  Right now, the actuator only works when connected to a computer via USB.  Presumably, you'd want a way to control the actuator from the ground (though I suppose some kind of on-board computer might work.  I don't know how you have your drones set up).  My circuit board has some WiFi/Bluetooth capabilities, but the ranges on those are far too short for anything you'd send up into a cloud.  I've researched a few options for long-range wireless communication, like radio or satellite, but I'd have to go hunting for some additional hardware to set that up.  I might play around with the bluetooth capabilities a bit, just for fun.
-   I deliberately made everything about the actuator bigger than it needed to be, just to make it easier to work with.  This applies to everything from the size of the salt container to the size of the dispersal opening - the first time I opened it up 100% with salt inside, it dumped everything before I could close it.  This pairs with the 3-d printer thing - it'll be easy to cut down on excess size once you're using custom-made parts.
-   I also wasn't totally satisfied with a simple trapdoor mechanism that dropped the salt straight down - it seems like you should be able to get better dispersal with more of a "spray" than a "drop".  I did some research and saw a few mechanisms for this, like aerosolizing the seeding material.  That seems like it might be overly complicated/expensive, though.  I had this crazy idea for attaching something like a seed spreader to the bottom of the actuator, like the kind that gardeners use:
 
-   ![seeder](images/seeder.jpg)
+If I had to do this again, what would I do differently?
+It would depend on what resources I had available.  Throughout this project, I kept thinking, man, a 3-d printer would really come in handy right now.  Obviously we'd want to replace the salt container with something that isn't a meme.  Something that would form an airtight seal and could be attached to the underside of a drone.  A 3-d printer would let you tailor the exact dimensions of the container to that of the drone you're using.
+Relatedly, we could build a dispersal mechanism with a tighter seal.  In the final video, you might have noticed a small trickle of salt, even when the actuator was supposed to be completely closed.  Custom-printed parts would allow for more precise and secure seals.
+The main thing I've been thinking about, though, is implementing wireless functionality.  Right now, the actuator only works when connected to a computer via USB.  Presumably, you'd want a way to control the actuator from the ground (though I suppose some kind of on-board computer might work.  I don't know how you have your drones set up).  My circuit board has some WiFi/Bluetooth capabilities, but the ranges on those are far too short for anything you'd send up into a cloud.  I've researched a few options for long-range wireless communication, like radio or satellite, but I'd have to go hunting for some additional hardware to set that up.  I might play around with the bluetooth capabilities a bit, just for fun.
+I deliberately made everything about the actuator bigger than it needed to be, just to make it easier to work with.  This applies to everything from the size of the salt container to the size of the dispersal opening - the first time I opened it up 100% with salt inside, it dumped everything before I could close it.  This pairs with the 3-d printer thing - it'll be easy to cut down on excess size once you're using custom-made parts.
+I also wasn't totally satisfied with a simple trapdoor mechanism that dropped the salt straight down - it seems like you should be able to get better dispersal with more of a "spray" than a "drop".  I did some research and saw a few mechanisms for this, like aerosolizing the seeding material.  That seems like it might be overly complicated/expensive, though.  I had this crazy idea for attaching something like a seed spreader to the bottom of the actuator, like the kind that gardeners use:
 
-   Basically, when you rotate the mechanism (easily done with a circular servo motor) it'll launch the salt horizontally, increasing dispersion.  This would cut down on battery life somewhat, but I don't think it would be too bad, especially since you don't need nearly as much torque as, say, the drone propellers.  After tinkering a bit, I realized that I'd need a 3-d printer to make a version of this that doesn't suck, so I shelved it.  I'm still thinking of ways to make it work, though.
+![seeder](images/seeder.jpg)
+
+Basically, when you rotate the mechanism (easily done with a circular servo motor) it'll launch the salt horizontally, increasing dispersion.  This would cut down on battery life somewhat, but I don't think it would be too bad, especially since you don't need nearly as much torque as, say, the drone propellers.  After tinkering a bit, I realized that I'd need a 3-d printer to make a version of this that doesn't suck, so I shelved it.  I'm still thinking of ways to make it work, though.
