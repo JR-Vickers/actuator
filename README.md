@@ -1,7 +1,10 @@
 # Introduction
 
 I saw this tweet a few weeks ago:
+
 ![tweet](images/tweet.jpg)
+
+I thought it'd be fun to build an actuator and control system, so I got to work.
 
 # Table of Contents
 
