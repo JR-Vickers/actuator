@@ -8,7 +8,7 @@ I thought it'd be fun to build an actuator and control system, so I got to work.
 
 ## Table of Contents
 
-- [1. Initial planning & simulating](#1. Initial planning & simulating)
+- [1. Initial planning & simulating](#section-1)
 - [2. Assembling the hardware](#section-2)
 - [3. Testing time!](#section-3)
 - [4. Things I learned](#section-4)
