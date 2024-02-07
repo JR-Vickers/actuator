@@ -81,13 +81,13 @@ _Time to shine_
 
 Here is a short video demonstrating a test run.
 
-[![YouTube Short](https://img.youtube.com/vi/foMiHHXyWe4/0.jpg)](https://www.youtube.com/shorts/foMiHHXyWe4){:target="\_blank"}
+[![YouTube Short](https://img.youtube.com/vi/foMiHHXyWe4/0.jpg)](https://www.youtube.com/shorts/foMiHHXyWe4)
 
 After testing a few software functions, I realized that I wanted more precise control over the amount of salt we can disperse at any given moment.  I wanted to be able to titrate the exact amount of salt that would be optimal to disperse at any given moment.  So, I made a function that lets you specify the exact size of the opening.  The program accepts any number between 0 and 100 (if you type something else, nothing happens).  The number corresponds to a given percentage of the size of the opening.  So, if you type 0, the actuator is 0% open (in other words, closed).  If you type in 100, then the actuator is 100% open.  In the video, I tested a few settings.  It starts at 0, then works its way through 25, 50, 75, and 100 before returning to 0.
 
 With that demonstration out of the way, I was able to move on to the real deal - actually dispersing salt.  Here is the video demonstrating the salt dispersal.
 
-[![YouTube Short](https://img.youtube.com/vi/omm86PlGhZU/0.jpg)](https://www.youtube.com/shorts/omm86PlGhZU){:target="\_blank"}
+[![YouTube Short](https://img.youtube.com/vi/omm86PlGhZU/0.jpg)](https://www.youtube.com/shorts/omm86PlGhZU)
 
 Here, we're starting at 0, before working up to 10, 20, 30, then back to 0.  (I tested 100 the first time I did this, but the salt flowed out WAY faster than I was expecting lol).  I don't know about you, but that looks like a success to me!
 
