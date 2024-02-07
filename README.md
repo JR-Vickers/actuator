@@ -20,7 +20,7 @@ I thought it'd be fun to build an actuator and control system, so I got to work.
 
 ---
 
-### [1. Initial planning & simulating](#section-1)
+### 1. Initial planning & simulating
 
 I've never built an actuator and control system, so I got ChatGPT to describe the mechanism and break it down into pieces.  I made an outline for the project and got to work.  I figured that the electronics would be the most difficult part, so I started there.  After evaluating a few dispersal options, I decided to keep things simple and implement a trapdoor mechanism to release the material.  Also, I decided to use salt as our cloud seeding material.
 
@@ -33,7 +33,7 @@ Once I was satisfied with the electrical components, I ordered a circuit board a
 
 ---
 
-### [2. Assembling the hardware](#section-2)
+### 2. Assembling the hardware
 
 I stopped by a family member's house to borrow some tools, and they suggested I use this giant M&M container to hold the salt.
 
@@ -81,7 +81,7 @@ _Time to shine_
 
 ---
 
-### [3. Testing time!](#section-3)
+### 3. Testing time!
 
 Here is a short video demonstrating a test run.
 
@@ -102,7 +102,7 @@ The circuit board I'm using supports a custom integrated development environment
 
 ---
 
-### [4. Things I learned](#section-4)
+### 4. Things I learned
 
 This is going to be a long list.  In no particular order:
 
@@ -115,7 +115,7 @@ This is going to be a long list.  In no particular order:
 
 ---
 
-### [5. Things I'd do differently](#section-5)
+### 5. Things I'd do differently
 
 If I had to do this again, what would I do differently?
 
